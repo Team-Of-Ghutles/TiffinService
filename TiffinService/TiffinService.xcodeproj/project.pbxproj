@@ -13,6 +13,7 @@
 		E52C60E41EA9908D0029D64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52C60E21EA9908D0029D64F /* Main.storyboard */; };
 		E52C60E61EA9908D0029D64F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52C60E51EA9908D0029D64F /* Assets.xcassets */; };
 		E52C60E91EA9908D0029D64F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52C60E71EA9908D0029D64F /* LaunchScreen.storyboard */; };
+		E52C60F11EA994910029D64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E52C60F01EA994910029D64F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E52C60E51EA9908D0029D64F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52C60E81EA9908D0029D64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52C60EA1EA9908D0029D64F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52C60F01EA994910029D64F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF41248F0F8383C752FB3BB0 /* Pods_TiffinService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiffinService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				E52C60E51EA9908D0029D64F /* Assets.xcassets */,
 				E52C60E71EA9908D0029D64F /* LaunchScreen.storyboard */,
 				E52C60EA1EA9908D0029D64F /* Info.plist */,
+				E52C60F01EA994910029D64F /* GoogleService-Info.plist */,
 			);
 			path = TiffinService;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52C60E91EA9908D0029D64F /* LaunchScreen.storyboard in Resources */,
+				E52C60F11EA994910029D64F /* GoogleService-Info.plist in Resources */,
 				E52C60E61EA9908D0029D64F /* Assets.xcassets in Resources */,
 				E52C60E41EA9908D0029D64F /* Main.storyboard in Resources */,
 			);
@@ -378,6 +382,7 @@
 				E52C60EF1EA9908D0029D64F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

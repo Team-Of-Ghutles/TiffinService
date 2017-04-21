@@ -47,4 +47,4 @@ Pods/
 
 # Firebase Auth File
 #
-firebase-ios-auth/firebase-ios-auth/GoogleService-Info.plist
+TiffinService/TiffinService/GoogleService-Info.plist
