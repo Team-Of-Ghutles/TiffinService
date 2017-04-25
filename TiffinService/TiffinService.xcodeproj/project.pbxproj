@@ -8,9 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		A26C9CA4B7835CD001FDBB45 /* Pods_TiffinService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF41248F0F8383C752FB3BB0 /* Pods_TiffinService.framework */; };
+		CB0CC6561EAACBC200EA3BC9 /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC6551EAACBC200EA3BC9 /* NetworkProtocols.swift */; };
+		CB0CC6581EAAFFAE00EA3BC9 /* Vendor_MenuInventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC6571EAAFFAE00EA3BC9 /* Vendor_MenuInventoryVC.swift */; };
+		CB0CC65A1EAB00F200EA3BC9 /* Vendor_MenuItemUploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC6591EAB00F200EA3BC9 /* Vendor_MenuItemUploadVC.swift */; };
+		CB0CC65C1EAB01D200EA3BC9 /* Client_ViewMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC65B1EAB01D200EA3BC9 /* Client_ViewMenuVC.swift */; };
+		CB0CC65E1EAB02CF00EA3BC9 /* Vendor_ViewOrdersByClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC65D1EAB02CF00EA3BC9 /* Vendor_ViewOrdersByClientVC.swift */; };
+		CB0CC6601EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC65F1EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift */; };
+		CB0CC6631EAB0A3400EA3BC9 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC6621EAB0A3400EA3BC9 /* Menu.swift */; };
+		CB0CC6651EAB0AA000EA3BC9 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC6641EAB0AA000EA3BC9 /* Order.swift */; };
+		CB0CC6671EAB0AC900EA3BC9 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC6661EAB0AC900EA3BC9 /* Balance.swift */; };
+		CB0CC6691EAB0B1100EA3BC9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC6681EAB0B1100EA3BC9 /* Transaction.swift */; };
+		CBB1C42F1EAEC68C00D50636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB1C42E1EAEC68C00D50636 /* Main.storyboard */; };
+		CBB1C4321EAECD0900D50636 /* OrderCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1C4311EAECD0900D50636 /* OrderCacher.swift */; };
+		CBF9AA431EABD51E005B50C1 /* MenuNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA421EABD51E005B50C1 /* MenuNetworker.swift */; };
+		CBF9AA451EABD550005B50C1 /* OrderNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA441EABD550005B50C1 /* OrderNetworker.swift */; };
+		CBF9AA471EABD5C9005B50C1 /* BalanceNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA461EABD5C9005B50C1 /* BalanceNetworker.swift */; };
+		CBF9AA491EABD600005B50C1 /* TransactionNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA481EABD600005B50C1 /* TransactionNetworker.swift */; };
+		CBF9AA4B1EABD769005B50C1 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA4A1EABD769005B50C1 /* MenuViewModel.swift */; };
+		CBF9AA4D1EABD868005B50C1 /* OrderVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA4C1EABD868005B50C1 /* OrderVM.swift */; };
+		CBF9AA4F1EABD8CB005B50C1 /* BalanceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA4E1EABD8CB005B50C1 /* BalanceVM.swift */; };
+		CBF9AA511EABD8EF005B50C1 /* TransactionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA501EABD8EF005B50C1 /* TransactionVM.swift */; };
+		CBF9AA541EABDAC7005B50C1 /* Client_OrderItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA531EABDAC7005B50C1 /* Client_OrderItemCell.swift */; };
+		CBF9AA561EABDB14005B50C1 /* Vendor_MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA551EABDB14005B50C1 /* Vendor_MenuItemCell.swift */; };
+		CBF9AA581EABDBA4005B50C1 /* Vendor_OrderPerClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA571EABDBA4005B50C1 /* Vendor_OrderPerClientCell.swift */; };
+		CBF9AA5A1EABDBE9005B50C1 /* Vendor_OrderPerItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA591EABDBE9005B50C1 /* Vendor_OrderPerItemCell.swift */; };
+		CBF9AA5D1EABDF84005B50C1 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA5C1EABDF84005B50C1 /* DateUtils.swift */; };
+		CBF9AA5F1EABDFC1005B50C1 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA5E1EABDFC1005B50C1 /* TimeUtils.swift */; };
 		E52C60DF1EA9908D0029D64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C60DE1EA9908D0029D64F /* AppDelegate.swift */; };
-		E52C60E11EA9908D0029D64F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C60E01EA9908D0029D64F /* ViewController.swift */; };
-		E52C60E41EA9908D0029D64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52C60E21EA9908D0029D64F /* Main.storyboard */; };
 		E52C60E61EA9908D0029D64F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52C60E51EA9908D0029D64F /* Assets.xcassets */; };
 		E52C60E91EA9908D0029D64F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52C60E71EA9908D0029D64F /* LaunchScreen.storyboard */; };
 		E52C60F11EA994910029D64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E52C60F01EA994910029D64F /* GoogleService-Info.plist */; };
@@ -19,10 +43,34 @@
 /* Begin PBXFileReference section */
 		01C03297F72D810513E20186 /* Pods-TiffinService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiffinService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TiffinService/Pods-TiffinService.debug.xcconfig"; sourceTree = "<group>"; };
 		908F39AA6ED68C95442A30BA /* Pods-TiffinService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiffinService.release.xcconfig"; path = "Pods/Target Support Files/Pods-TiffinService/Pods-TiffinService.release.xcconfig"; sourceTree = "<group>"; };
+		CB0CC6551EAACBC200EA3BC9 /* NetworkProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		CB0CC6571EAAFFAE00EA3BC9 /* Vendor_MenuInventoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendor_MenuInventoryVC.swift; sourceTree = "<group>"; };
+		CB0CC6591EAB00F200EA3BC9 /* Vendor_MenuItemUploadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendor_MenuItemUploadVC.swift; sourceTree = "<group>"; };
+		CB0CC65B1EAB01D200EA3BC9 /* Client_ViewMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client_ViewMenuVC.swift; sourceTree = "<group>"; };
+		CB0CC65D1EAB02CF00EA3BC9 /* Vendor_ViewOrdersByClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendor_ViewOrdersByClientVC.swift; sourceTree = "<group>"; };
+		CB0CC65F1EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendor_ViewOrdersByItemVC.swift; sourceTree = "<group>"; };
+		CB0CC6621EAB0A3400EA3BC9 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		CB0CC6641EAB0AA000EA3BC9 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		CB0CC6661EAB0AC900EA3BC9 /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		CB0CC6681EAB0B1100EA3BC9 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CBB1C42E1EAEC68C00D50636 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CBB1C4311EAECD0900D50636 /* OrderCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCacher.swift; sourceTree = "<group>"; };
+		CBF9AA421EABD51E005B50C1 /* MenuNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNetworker.swift; sourceTree = "<group>"; };
+		CBF9AA441EABD550005B50C1 /* OrderNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderNetworker.swift; sourceTree = "<group>"; };
+		CBF9AA461EABD5C9005B50C1 /* BalanceNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceNetworker.swift; sourceTree = "<group>"; };
+		CBF9AA481EABD600005B50C1 /* TransactionNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionNetworker.swift; sourceTree = "<group>"; };
+		CBF9AA4A1EABD769005B50C1 /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		CBF9AA4C1EABD868005B50C1 /* OrderVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderVM.swift; sourceTree = "<group>"; };
+		CBF9AA4E1EABD8CB005B50C1 /* BalanceVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceVM.swift; sourceTree = "<group>"; };
+		CBF9AA501EABD8EF005B50C1 /* TransactionVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionVM.swift; sourceTree = "<group>"; };
+		CBF9AA531EABDAC7005B50C1 /* Client_OrderItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client_OrderItemCell.swift; sourceTree = "<group>"; };
+		CBF9AA551EABDB14005B50C1 /* Vendor_MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendor_MenuItemCell.swift; sourceTree = "<group>"; };
+		CBF9AA571EABDBA4005B50C1 /* Vendor_OrderPerClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendor_OrderPerClientCell.swift; sourceTree = "<group>"; };
+		CBF9AA591EABDBE9005B50C1 /* Vendor_OrderPerItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendor_OrderPerItemCell.swift; sourceTree = "<group>"; };
+		CBF9AA5C1EABDF84005B50C1 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		CBF9AA5E1EABDFC1005B50C1 /* TimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
 		E52C60DB1EA9908D0029D64F /* TiffinService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiffinService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C60DE1EA9908D0029D64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E52C60E01EA9908D0029D64F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E52C60E31EA9908D0029D64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E52C60E51EA9908D0029D64F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52C60E81EA9908D0029D64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52C60EA1EA9908D0029D64F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +107,103 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB0CC64F1EAAC84000EA3BC9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB0CC6571EAAFFAE00EA3BC9 /* Vendor_MenuInventoryVC.swift */,
+				CB0CC6591EAB00F200EA3BC9 /* Vendor_MenuItemUploadVC.swift */,
+				CB0CC65B1EAB01D200EA3BC9 /* Client_ViewMenuVC.swift */,
+				CB0CC65D1EAB02CF00EA3BC9 /* Vendor_ViewOrdersByClientVC.swift */,
+				CB0CC65F1EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CB0CC6501EAAC85900EA3BC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB0CC6621EAB0A3400EA3BC9 /* Menu.swift */,
+				CB0CC6641EAB0AA000EA3BC9 /* Order.swift */,
+				CB0CC6661EAB0AC900EA3BC9 /* Balance.swift */,
+				CB0CC6681EAB0B1100EA3BC9 /* Transaction.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CB0CC6511EAAC86300EA3BC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBF9AA521EABDA92005B50C1 /* TableViewCells */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CB0CC6521EAAC86F00EA3BC9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CBF9AA4A1EABD769005B50C1 /* MenuViewModel.swift */,
+				CBF9AA4C1EABD868005B50C1 /* OrderVM.swift */,
+				CBF9AA4E1EABD8CB005B50C1 /* BalanceVM.swift */,
+				CBF9AA501EABD8EF005B50C1 /* TransactionVM.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB0CC6531EAAC87C00EA3BC9 /* Networkers */ = {
+			isa = PBXGroup;
+			children = (
+				CBF9AA421EABD51E005B50C1 /* MenuNetworker.swift */,
+				CBF9AA441EABD550005B50C1 /* OrderNetworker.swift */,
+				CBF9AA461EABD5C9005B50C1 /* BalanceNetworker.swift */,
+				CBF9AA481EABD600005B50C1 /* TransactionNetworker.swift */,
+			);
+			name = Networkers;
+			sourceTree = "<group>";
+		};
+		CB0CC6541EAACAF300EA3BC9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CB0CC6551EAACBC200EA3BC9 /* NetworkProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		CB0CC6611EAB03C400EA3BC9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CBB1C42E1EAEC68C00D50636 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CBB1C4301EAECCEE00D50636 /* Cachers */ = {
+			isa = PBXGroup;
+			children = (
+				CBB1C4311EAECD0900D50636 /* OrderCacher.swift */,
+			);
+			name = Cachers;
+			sourceTree = "<group>";
+		};
+		CBF9AA521EABDA92005B50C1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CBF9AA531EABDAC7005B50C1 /* Client_OrderItemCell.swift */,
+				CBF9AA551EABDB14005B50C1 /* Vendor_MenuItemCell.swift */,
+				CBF9AA571EABDBA4005B50C1 /* Vendor_OrderPerClientCell.swift */,
+				CBF9AA591EABDBE9005B50C1 /* Vendor_OrderPerItemCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		CBF9AA5B1EABDF68005B50C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CBF9AA5C1EABDF84005B50C1 /* DateUtils.swift */,
+				CBF9AA5E1EABDFC1005B50C1 /* TimeUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		E52C60D21EA9908D0029D64F = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +225,16 @@
 		E52C60DD1EA9908D0029D64F /* TiffinService */ = {
 			isa = PBXGroup;
 			children = (
+				CBB1C4301EAECCEE00D50636 /* Cachers */,
+				CBF9AA5B1EABDF68005B50C1 /* Utils */,
+				CB0CC6611EAB03C400EA3BC9 /* Storyboards */,
+				CB0CC6541EAACAF300EA3BC9 /* Protocols */,
+				CB0CC6531EAAC87C00EA3BC9 /* Networkers */,
+				CB0CC6521EAAC86F00EA3BC9 /* ViewModels */,
+				CB0CC6511EAAC86300EA3BC9 /* View */,
+				CB0CC6501EAAC85900EA3BC9 /* Models */,
+				CB0CC64F1EAAC84000EA3BC9 /* ViewControllers */,
 				E52C60DE1EA9908D0029D64F /* AppDelegate.swift */,
-				E52C60E01EA9908D0029D64F /* ViewController.swift */,
-				E52C60E21EA9908D0029D64F /* Main.storyboard */,
 				E52C60E51EA9908D0029D64F /* Assets.xcassets */,
 				E52C60E71EA9908D0029D64F /* LaunchScreen.storyboard */,
 				E52C60EA1EA9908D0029D64F /* Info.plist */,
@@ -126,6 +278,7 @@
 				TargetAttributes = {
 					E52C60DA1EA9908D0029D64F = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8WUCP656VM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,9 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52C60E91EA9908D0029D64F /* LaunchScreen.storyboard in Resources */,
+				CBB1C42F1EAEC68C00D50636 /* Main.storyboard in Resources */,
 				E52C60F11EA994910029D64F /* GoogleService-Info.plist in Resources */,
 				E52C60E61EA9908D0029D64F /* Assets.xcassets in Resources */,
-				E52C60E41EA9908D0029D64F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +328,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		32BBD4CB86FBC193DACA3A86 /* [CP] Embed Pods Frameworks */ = {
@@ -215,22 +368,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E52C60E11EA9908D0029D64F /* ViewController.swift in Sources */,
+				CB0CC6691EAB0B1100EA3BC9 /* Transaction.swift in Sources */,
+				CBF9AA5D1EABDF84005B50C1 /* DateUtils.swift in Sources */,
+				CB0CC6581EAAFFAE00EA3BC9 /* Vendor_MenuInventoryVC.swift in Sources */,
+				CB0CC6561EAACBC200EA3BC9 /* NetworkProtocols.swift in Sources */,
+				CB0CC6651EAB0AA000EA3BC9 /* Order.swift in Sources */,
+				CB0CC65A1EAB00F200EA3BC9 /* Vendor_MenuItemUploadVC.swift in Sources */,
+				CBF9AA511EABD8EF005B50C1 /* TransactionVM.swift in Sources */,
+				CB0CC6601EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift in Sources */,
+				CBF9AA471EABD5C9005B50C1 /* BalanceNetworker.swift in Sources */,
+				CB0CC6631EAB0A3400EA3BC9 /* Menu.swift in Sources */,
+				CB0CC6671EAB0AC900EA3BC9 /* Balance.swift in Sources */,
+				CBF9AA4F1EABD8CB005B50C1 /* BalanceVM.swift in Sources */,
+				CBF9AA491EABD600005B50C1 /* TransactionNetworker.swift in Sources */,
+				CBF9AA581EABDBA4005B50C1 /* Vendor_OrderPerClientCell.swift in Sources */,
+				CBB1C4321EAECD0900D50636 /* OrderCacher.swift in Sources */,
+				CBF9AA4D1EABD868005B50C1 /* OrderVM.swift in Sources */,
+				CBF9AA431EABD51E005B50C1 /* MenuNetworker.swift in Sources */,
+				CBF9AA5F1EABDFC1005B50C1 /* TimeUtils.swift in Sources */,
+				CBF9AA541EABDAC7005B50C1 /* Client_OrderItemCell.swift in Sources */,
+				CBF9AA451EABD550005B50C1 /* OrderNetworker.swift in Sources */,
+				CB0CC65E1EAB02CF00EA3BC9 /* Vendor_ViewOrdersByClientVC.swift in Sources */,
 				E52C60DF1EA9908D0029D64F /* AppDelegate.swift in Sources */,
+				CB0CC65C1EAB01D200EA3BC9 /* Client_ViewMenuVC.swift in Sources */,
+				CBF9AA4B1EABD769005B50C1 /* MenuViewModel.swift in Sources */,
+				CBF9AA561EABDB14005B50C1 /* Vendor_MenuItemCell.swift in Sources */,
+				CBF9AA5A1EABDBE9005B50C1 /* Vendor_OrderPerItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E52C60E21EA9908D0029D64F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E52C60E31EA9908D0029D64F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E52C60E71EA9908D0029D64F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,6 +511,7 @@
 			baseConfigurationReference = 01C03297F72D810513E20186 /* Pods-TiffinService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8WUCP656VM;
 				INFOPLIST_FILE = TiffinService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghutles.TiffinService;
@@ -355,6 +525,7 @@
 			baseConfigurationReference = 908F39AA6ED68C95442A30BA /* Pods-TiffinService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8WUCP656VM;
 				INFOPLIST_FILE = TiffinService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghutles.TiffinService;
