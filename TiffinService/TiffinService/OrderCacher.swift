@@ -11,20 +11,24 @@ import Foundation
 import ObjectMapper
 
 class OrderCaher {
-    
+    /**
+    The purpose of this cacher for now is to maintain last order's information in UserDefaults. Timeline of this cache is 1 day 
+    like stuff kept in locker rooms
+    */
+    static var userDefaultsKey = "PreviousOrderItems"
     var cache: [String: Any]?
     let prefs = UserDefaults.standard
     
     init() {
-        self.cache = self.prefs.dictionary(forKey: "PreviousOrderItems")
+        self.cache = self.prefs.dictionary(forKey: OrderCaher.userDefaultsKey)
     }
     
     ///Method to serialize OrderItemVM as a [String:Any] into self.cache
-    func _serializeToCache(orderVM: OrderItemVM) {
+    func serializeToCache(viewModel: OrderItemVM) {
         if self.cache == nil {
             self.cache = [String: Any]()
         }
-        self.cache![orderVM.itemID] = Mapper().toJSON(orderVM.model)
+        self.cache![viewModel.itemID] = Mapper().toJSON(viewModel.model)
     }
     
     /**
@@ -48,8 +52,9 @@ class OrderCaher {
             }
         }
         self.cache = [String: Any]()
-        newOrderItemVMs.map {self._serializeToCache(orderVM: $0)}
+        newOrderItemVMs.map {self.serializeToCache(viewModel: $0)}
         self.prefs.set(self.cache, forKey: "PreviousOrderItems")
+        self.prefs.set(getCurrentDate(), forKey: "Date")
         return newOrderItemsCopy
     }
 }

@@ -20,6 +20,7 @@
 		CB0CC6691EAB0B1100EA3BC9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CC6681EAB0B1100EA3BC9 /* Transaction.swift */; };
 		CBB1C42F1EAEC68C00D50636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB1C42E1EAEC68C00D50636 /* Main.storyboard */; };
 		CBB1C4321EAECD0900D50636 /* OrderCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1C4311EAECD0900D50636 /* OrderCacher.swift */; };
+		CBB1C4341EAF010400D50636 /* TransactionCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1C4331EAF010400D50636 /* TransactionCacher.swift */; };
 		CBF9AA431EABD51E005B50C1 /* MenuNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA421EABD51E005B50C1 /* MenuNetworker.swift */; };
 		CBF9AA451EABD550005B50C1 /* OrderNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA441EABD550005B50C1 /* OrderNetworker.swift */; };
 		CBF9AA471EABD5C9005B50C1 /* BalanceNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9AA461EABD5C9005B50C1 /* BalanceNetworker.swift */; };
@@ -55,6 +56,7 @@
 		CB0CC6681EAB0B1100EA3BC9 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		CBB1C42E1EAEC68C00D50636 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CBB1C4311EAECD0900D50636 /* OrderCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCacher.swift; sourceTree = "<group>"; };
+		CBB1C4331EAF010400D50636 /* TransactionCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCacher.swift; sourceTree = "<group>"; };
 		CBF9AA421EABD51E005B50C1 /* MenuNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNetworker.swift; sourceTree = "<group>"; };
 		CBF9AA441EABD550005B50C1 /* OrderNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderNetworker.swift; sourceTree = "<group>"; };
 		CBF9AA461EABD5C9005B50C1 /* BalanceNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceNetworker.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB1C4311EAECD0900D50636 /* OrderCacher.swift */,
+				CBB1C4331EAF010400D50636 /* TransactionCacher.swift */,
 			);
 			name = Cachers;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				CB0CC6581EAAFFAE00EA3BC9 /* Vendor_MenuInventoryVC.swift in Sources */,
 				CB0CC6561EAACBC200EA3BC9 /* NetworkProtocols.swift in Sources */,
 				CB0CC6651EAB0AA000EA3BC9 /* Order.swift in Sources */,
+				CBB1C4341EAF010400D50636 /* TransactionCacher.swift in Sources */,
 				CB0CC65A1EAB00F200EA3BC9 /* Vendor_MenuItemUploadVC.swift in Sources */,
 				CBF9AA511EABD8EF005B50C1 /* TransactionVM.swift in Sources */,
 				CB0CC6601EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift in Sources */,

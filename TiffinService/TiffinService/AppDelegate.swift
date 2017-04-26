@@ -18,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
+        let lastOrderDate = UserDefaults.standard.string(forKey: "Date")
+        if lastOrderDate != getCurrentDate() {
+            UserDefaults.standard.removeObject(forKey: OrderCaher.userDefaultsKey)
+            UserDefaults.standard.removeObject(forKey: TransactionCacher.userDefaultsKey)
+        }
         return true
     }
 

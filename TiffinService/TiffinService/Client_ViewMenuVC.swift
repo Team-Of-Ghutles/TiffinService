@@ -21,7 +21,6 @@ class Client_ViewMenuVC: UIViewController, UITableViewDelegate, UITableViewDataS
     
     var dataSource = [OrderItemVM]()
     override func viewDidLoad() {
-        UserDefaults.standard.removeObject(forKey: "PreviousOrderItems")
         super.viewDidLoad()
         menuTable.delegate = self
         menuTable.dataSource = self
