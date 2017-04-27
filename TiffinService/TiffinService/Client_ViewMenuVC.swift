@@ -22,6 +22,9 @@ class Client_ViewMenuVC: UIViewController, UITableViewDelegate, UITableViewDataS
     var dataSource = [OrderItemVM]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaults.standard.removeObject(forKey: "Date")
+        UserDefaults.standard.removeObject(forKey: OrderCaher.userDefaultsKey)
+        UserDefaults.standard.removeObject(forKey: TransactionCacher.userDefaultsKey)
         menuTable.delegate = self
         menuTable.dataSource = self
         self.orderTotalLbl.text = "$0"
