@@ -57,6 +57,7 @@
 		CBB1C42E1EAEC68C00D50636 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CBB1C4311EAECD0900D50636 /* OrderCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCacher.swift; sourceTree = "<group>"; };
 		CBB1C4331EAF010400D50636 /* TransactionCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCacher.swift; sourceTree = "<group>"; };
+		CBE801D01EB99F01002B3749 /* TiffinService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TiffinService.entitlements; sourceTree = "<group>"; };
 		CBF9AA421EABD51E005B50C1 /* MenuNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNetworker.swift; sourceTree = "<group>"; };
 		CBF9AA441EABD550005B50C1 /* OrderNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderNetworker.swift; sourceTree = "<group>"; };
 		CBF9AA461EABD5C9005B50C1 /* BalanceNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceNetworker.swift; sourceTree = "<group>"; };
@@ -228,6 +229,7 @@
 		E52C60DD1EA9908D0029D64F /* TiffinService */ = {
 			isa = PBXGroup;
 			children = (
+				CBE801D01EB99F01002B3749 /* TiffinService.entitlements */,
 				CBB1C4301EAECCEE00D50636 /* Cachers */,
 				CBF9AA5B1EABDF68005B50C1 /* Utils */,
 				CB0CC6611EAB03C400EA3BC9 /* Storyboards */,
@@ -283,6 +285,14 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8WUCP656VM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -515,6 +525,7 @@
 			baseConfigurationReference = 01C03297F72D810513E20186 /* Pods-TiffinService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TiffinService/TiffinService.entitlements;
 				DEVELOPMENT_TEAM = 8WUCP656VM;
 				INFOPLIST_FILE = TiffinService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -529,6 +540,7 @@
 			baseConfigurationReference = 908F39AA6ED68C95442A30BA /* Pods-TiffinService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TiffinService/TiffinService.entitlements;
 				DEVELOPMENT_TEAM = 8WUCP656VM;
 				INFOPLIST_FILE = TiffinService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
