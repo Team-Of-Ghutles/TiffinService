@@ -19,6 +19,10 @@ class CompleteRegistrationViewController: UIViewController {
     var username: String!
     var password: String!
     
+    var textFieldNotValid: Bool {
+        return firstName.text!.isEmpty || lastName.text!.isEmpty || phone.text!.isEmpty
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,7 +30,12 @@ class CompleteRegistrationViewController: UIViewController {
     func showAlertOnError(description: String) {
         // show alert popup
         let alert = UIAlertController(title: "Error!", message: description, preferredStyle: .alert)
-        let OKAction = UIAlertAction(title: "OK", style: .default, handler: OKAlertButtonHandler)
+        var OKAction: UIAlertAction
+        if description != "Please enter all fields!" {
+            OKAction = UIAlertAction(title: "OK", style: .default, handler: OKAlertButtonHandler)
+        } else {
+            OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        }
         alert.addAction(OKAction)
         self.present(alert, animated: true, completion: nil)
     }
@@ -37,6 +46,7 @@ class CompleteRegistrationViewController: UIViewController {
     }
     
     func validateAndPrepareUserModelToWriteToFirebase() -> [String:String] {
+        
         let usermodel: [String:String] = ["email" : username,
                          "firstname" : firstName.text!,
                          "lastname" : lastName.text!,
@@ -56,19 +66,23 @@ class CompleteRegistrationViewController: UIViewController {
         case "Cancel":
             self.dismiss(animated: true, completion: nil)
         case "Complete Registration":
-            FIRAuth.auth()?.createUser(withEmail: username, password: password, completion: { (user, error) in
-                if error != nil {
-                    self.showAlertOnError(description: (error?.localizedDescription)!)
-                } else {
-                    let ref = FIRDatabase.database().reference().child("Users").child((FIRAuth.auth()?.currentUser?.uid)!)
-                    let usermodel = self.validateAndPrepareUserModelToWriteToFirebase()
-                    ref.setValue(usermodel, withCompletionBlock: { (_, _) in
-                        UserDefaults.standard.set(usermodel, forKey: "User")
-                        // TODO : based on user role -- set the relevant root VC.
-                        AppDelegate.LaunchViewController.ClientViewMenuVC.setAsRootviewController(animated: true)
-                    })
-                }
-            })
+            if textFieldNotValid {
+                showAlertOnError(description: "Please enter all fields!")
+            } else {
+                FIRAuth.auth()?.createUser(withEmail: username, password: password, completion: { (user, error) in
+                    if error != nil {
+                        self.showAlertOnError(description: (error?.localizedDescription)!)
+                    } else {
+                        let ref = FIRDatabase.database().reference().child("Users").child((FIRAuth.auth()?.currentUser?.uid)!)
+                        let usermodel = self.validateAndPrepareUserModelToWriteToFirebase()
+                        ref.setValue(usermodel, withCompletionBlock: { (_, _) in
+                            UserDefaults.standard.set(usermodel, forKey: "User")
+                            // TODO : based on user role -- set the relevant root VC.
+                            AppDelegate.LaunchViewController.ClientViewMenuVC.setAsRootviewController(animated: true)
+                        })
+                    }
+                })
+            }
         default:
             print("CompleteRegistrationViewController :: Unrecognized button")
         }
