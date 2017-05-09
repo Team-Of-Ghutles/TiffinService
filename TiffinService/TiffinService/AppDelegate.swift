@@ -19,7 +19,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+     
         FIRApp.configure()
+        
+        // MARK :- Login Integration Code
+        
+        if window == nil {
+            window = UIWindow(frame: UIScreen.main.bounds)
+        }
+        
+        if (FIRAuth.auth()?.currentUser != nil) {
+            LaunchViewController.ClientViewMenuVC.setAsRootviewController(animated: true)
+        } else {
+            LaunchViewController.Login.setAsRootviewController(animated: true)
+        }
+        
+        
+        // MARK :- Srikant PushNotification.
+        
         print("Token-----------\(FIRInstanceID.instanceID().token()!)")
         let lastOrderDate = UserDefaults.standard.string(forKey: "Date")
         if lastOrderDate != getCurrentDate() {
@@ -99,7 +116,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
 
 @available(iOS 10, *)
@@ -123,6 +139,106 @@ extension AppDelegate : FIRMessagingDelegate {
     // Receive data message on iOS 10 devices.
     func applicationReceivedRemoteMessage(_ remoteMessage: FIRMessagingRemoteMessage) {
         print("%@", remoteMessage.appData)
+    }
+}
+
+
+// MARK :- Login Integration Code.
+
+extension AppDelegate {
+    
+    enum LaunchViewController {
+        case Login, ClientViewMenuVC
+        
+        var viewController: UIViewController {
+            switch self {
+            case .Login: return StoryboardScene.Login.initialViewController()
+            case .ClientViewMenuVC: return StoryboardScene.Main.initialViewController()
+            }
+        }
+        
+        /// Sets `UIWindow().rootViewController` to the appropriate view controller, by default this runs without an animation.
+        func setAsRootviewController(animated: Bool = false) {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let window = appDelegate.window!
+            let launchViewController = viewController
+            
+            print("Setting \(type(of: launchViewController)) as rootViewController")
+            if let rootViewController = window.rootViewController, type(of: rootViewController) != type(of: launchViewController) && animated {
+                let overlayView = UIScreen.main.snapshotView(afterScreenUpdates: false)
+                launchViewController.view.addSubview(overlayView)
+                
+                UIView.animate(withDuration: 0.3, animations: {
+                    overlayView.alpha = 0.0
+                },
+                               completion: { _ in
+                                overlayView.removeFromSuperview()
+                });
+            }
+            
+            window.rootViewController = launchViewController
+            window.restorationIdentifier = String(describing: type(of: launchViewController))
+            
+            if window.isKeyWindow == false {
+                window.makeKeyAndVisible()
+            }
+        }
+    }
+}
+
+protocol StoryboardSceneType {
+    static var storyboardName: String { get }
+}
+
+extension StoryboardSceneType {
+    static func storyboard() -> UIStoryboard {
+        return UIStoryboard(name: self.storyboardName, bundle: nil)
+    }
+    
+    static func initialViewController() -> UIViewController {
+        guard let vc = storyboard().instantiateInitialViewController() else {
+            fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
+        }
+        return vc
+    }
+}
+
+extension StoryboardSceneType where Self: RawRepresentable, Self.RawValue == String {
+    func viewController() -> UIViewController {
+        return Self.storyboard().instantiateViewController(withIdentifier: self.rawValue)
+    }
+    static func viewController(identifier: Self) -> UIViewController {
+        return identifier.viewController()
+    }
+}
+
+protocol StoryboardSegueType: RawRepresentable { }
+
+extension UIViewController {
+    func perform<S: StoryboardSegueType>(segue: S, sender: Any? = nil) where S.RawValue == String {
+        performSegue(withIdentifier: segue.rawValue, sender: sender)
+    }
+}
+
+enum StoryboardScene {
+    enum LaunchScreen: StoryboardSceneType {
+        static let storyboardName = "LaunchScreen"
+    }
+    enum Main: String, StoryboardSceneType {
+        static let storyboardName = "Main"
+        
+        case ClientViewMenuVC = "ClientViewMenuVC"
+        static func clientViewMenuVCViewController() -> Client_ViewMenuVC {
+            return Main.ClientViewMenuVC.viewController() as! Client_ViewMenuVC
+        }
+    }
+    enum Login: String, StoryboardSceneType {
+        static let storyboardName = "Login"
+        
+        case LoginVC = "LoginVC"
+        static func loginViewController() -> LoginViewController {
+            return Login.LoginVC.viewController() as! LoginViewController
+        }
     }
 }
 
