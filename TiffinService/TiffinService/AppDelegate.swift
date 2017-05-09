@@ -37,7 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // MARK :- Srikant PushNotification.
         
-        print("Token-----------\(FIRInstanceID.instanceID().token()!)")
+        // Commented out due to app crashing because of forced un-wrap.
+        //print("Token-----------\(FIRInstanceID.instanceID().token()!)")
         let lastOrderDate = UserDefaults.standard.string(forKey: "Date")
         if lastOrderDate != getCurrentDate() {
             UserDefaults.standard.removeObject(forKey: OrderCaher.userDefaultsKey)

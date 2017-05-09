@@ -47,6 +47,10 @@ class Client_ViewMenuVC: UIViewController, UITableViewDelegate, UITableViewDataS
         orderItemNetworker.writeToDB(viewModels: orderVM.containees)
     }
     
+    @IBAction func LogoutHandler(_ sender: UIButton) {
+        sender.logout()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource.count
     }

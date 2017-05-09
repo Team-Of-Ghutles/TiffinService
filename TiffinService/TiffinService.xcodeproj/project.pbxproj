@@ -45,6 +45,7 @@
 		E5AC430E1EC133EC00989EF5 /* LoginNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC430D1EC133EC00989EF5 /* LoginNetworkService.swift */; };
 		E5AC43101EC140A800989EF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC430F1EC140A800989EF5 /* User.swift */; };
 		E5AC43121EC144E100989EF5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43111EC144E100989EF5 /* NetworkService.swift */; };
+		E5AC43151EC1637C00989EF5 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43141EC1637C00989EF5 /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		E5AC430D1EC133EC00989EF5 /* LoginNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworkService.swift; sourceTree = "<group>"; };
 		E5AC430F1EC140A800989EF5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E5AC43111EC144E100989EF5 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E5AC43141EC1637C00989EF5 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		EF41248F0F8383C752FB3BB0 /* Pods_TiffinService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiffinService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -247,6 +249,7 @@
 		E52C60DD1EA9908D0029D64F /* TiffinService */ = {
 			isa = PBXGroup;
 			children = (
+				E5AC43131EC1636300989EF5 /* extensions */,
 				CBE801D01EB99F01002B3749 /* TiffinService.entitlements */,
 				CBB1C4301EAECCEE00D50636 /* Cachers */,
 				CBF9AA5B1EABDF68005B50C1 /* Utils */,
@@ -264,6 +267,14 @@
 				E52C60F01EA994910029D64F /* GoogleService-Info.plist */,
 			);
 			path = TiffinService;
+			sourceTree = "<group>";
+		};
+		E5AC43131EC1636300989EF5 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5AC43141EC1637C00989EF5 /* extensions.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +425,7 @@
 				CB0CC6601EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift in Sources */,
 				CBF9AA471EABD5C9005B50C1 /* BalanceNetworker.swift in Sources */,
 				CB0CC6631EAB0A3400EA3BC9 /* Menu.swift in Sources */,
+				E5AC43151EC1637C00989EF5 /* extensions.swift in Sources */,
 				CB0CC6671EAB0AC900EA3BC9 /* Balance.swift in Sources */,
 				CBF9AA4F1EABD8CB005B50C1 /* BalanceVM.swift in Sources */,
 				CBF9AA491EABD600005B50C1 /* TransactionNetworker.swift in Sources */,
