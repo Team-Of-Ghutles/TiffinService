@@ -12,6 +12,7 @@ class Client_ViewMenuVC: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var menuTable: UITableView!
     @IBOutlet weak var orderTotalLbl: UILabel!
+    @IBOutlet weak var username: UILabel!
     
     var publishedMenuNetworker = PublishedMenuNetworker()
     var orderItemNetworker = OrderItemNetworker()
@@ -30,6 +31,8 @@ class Client_ViewMenuVC: UIViewController, UITableViewDelegate, UITableViewDataS
         self.orderTotalLbl.text = "$0"
         self.publishedMenuNetworker.delegate = self
         self.publishedMenuNetworker.getMenu()
+        let usermodel: [String:String] = UserDefaults.standard.dictionary(forKey: "User") as! [String : String]
+        username.text = usermodel["firstname"]
     }
     
     @IBAction func SubmitOrder(sender: UIButton) {
@@ -45,6 +48,10 @@ class Client_ViewMenuVC: UIViewController, UITableViewDelegate, UITableViewDataS
             }
         }
         orderItemNetworker.writeToDB(viewModels: orderVM.containees)
+    }
+    
+    @IBAction func LogoutHandler(_ sender: UIButton) {
+        sender.logout()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

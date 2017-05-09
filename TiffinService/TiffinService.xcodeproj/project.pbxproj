@@ -39,6 +39,14 @@
 		E52C60E61EA9908D0029D64F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52C60E51EA9908D0029D64F /* Assets.xcassets */; };
 		E52C60E91EA9908D0029D64F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52C60E71EA9908D0029D64F /* LaunchScreen.storyboard */; };
 		E52C60F11EA994910029D64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E52C60F01EA994910029D64F /* GoogleService-Info.plist */; };
+		E5AC43081EC132C600989EF5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AC43071EC132C600989EF5 /* Login.storyboard */; };
+		E5AC430A1EC1339800989EF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43091EC1339800989EF5 /* LoginViewController.swift */; };
+		E5AC430C1EC133B900989EF5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC430B1EC133B900989EF5 /* LoginViewModel.swift */; };
+		E5AC430E1EC133EC00989EF5 /* LoginNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC430D1EC133EC00989EF5 /* LoginNetworkService.swift */; };
+		E5AC43101EC140A800989EF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC430F1EC140A800989EF5 /* User.swift */; };
+		E5AC43121EC144E100989EF5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43111EC144E100989EF5 /* NetworkService.swift */; };
+		E5AC43151EC1637C00989EF5 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43141EC1637C00989EF5 /* extensions.swift */; };
+		E5AC43191EC24B2C00989EF5 /* CompleteRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +86,14 @@
 		E52C60E81EA9908D0029D64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52C60EA1EA9908D0029D64F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52C60F01EA994910029D64F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5AC43071EC132C600989EF5 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		E5AC43091EC1339800989EF5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E5AC430B1EC133B900989EF5 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E5AC430D1EC133EC00989EF5 /* LoginNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworkService.swift; sourceTree = "<group>"; };
+		E5AC430F1EC140A800989EF5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E5AC43111EC144E100989EF5 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E5AC43141EC1637C00989EF5 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteRegistrationViewController.swift; sourceTree = "<group>"; };
 		EF41248F0F8383C752FB3BB0 /* Pods_TiffinService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiffinService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +134,8 @@
 				CB0CC65B1EAB01D200EA3BC9 /* Client_ViewMenuVC.swift */,
 				CB0CC65D1EAB02CF00EA3BC9 /* Vendor_ViewOrdersByClientVC.swift */,
 				CB0CC65F1EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift */,
+				E5AC43091EC1339800989EF5 /* LoginViewController.swift */,
+				E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -129,6 +147,7 @@
 				CB0CC6641EAB0AA000EA3BC9 /* Order.swift */,
 				CB0CC6661EAB0AC900EA3BC9 /* Balance.swift */,
 				CB0CC6681EAB0B1100EA3BC9 /* Transaction.swift */,
+				E5AC430F1EC140A800989EF5 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -148,6 +167,7 @@
 				CBF9AA4C1EABD868005B50C1 /* OrderVM.swift */,
 				CBF9AA4E1EABD8CB005B50C1 /* BalanceVM.swift */,
 				CBF9AA501EABD8EF005B50C1 /* TransactionVM.swift */,
+				E5AC430B1EC133B900989EF5 /* LoginViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -159,6 +179,8 @@
 				CBF9AA441EABD550005B50C1 /* OrderNetworker.swift */,
 				CBF9AA461EABD5C9005B50C1 /* BalanceNetworker.swift */,
 				CBF9AA481EABD600005B50C1 /* TransactionNetworker.swift */,
+				E5AC430D1EC133EC00989EF5 /* LoginNetworkService.swift */,
+				E5AC43111EC144E100989EF5 /* NetworkService.swift */,
 			);
 			name = Networkers;
 			sourceTree = "<group>";
@@ -175,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB1C42E1EAEC68C00D50636 /* Main.storyboard */,
+				E5AC43071EC132C600989EF5 /* Login.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -229,6 +252,7 @@
 		E52C60DD1EA9908D0029D64F /* TiffinService */ = {
 			isa = PBXGroup;
 			children = (
+				E5AC43131EC1636300989EF5 /* extensions */,
 				CBE801D01EB99F01002B3749 /* TiffinService.entitlements */,
 				CBB1C4301EAECCEE00D50636 /* Cachers */,
 				CBF9AA5B1EABDF68005B50C1 /* Utils */,
@@ -246,6 +270,14 @@
 				E52C60F01EA994910029D64F /* GoogleService-Info.plist */,
 			);
 			path = TiffinService;
+			sourceTree = "<group>";
+		};
+		E5AC43131EC1636300989EF5 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5AC43141EC1637C00989EF5 /* extensions.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +354,7 @@
 				E52C60E91EA9908D0029D64F /* LaunchScreen.storyboard in Resources */,
 				CBB1C42F1EAEC68C00D50636 /* Main.storyboard in Resources */,
 				E52C60F11EA994910029D64F /* GoogleService-Info.plist in Resources */,
+				E5AC43081EC132C600989EF5 /* Login.storyboard in Resources */,
 				E52C60E61EA9908D0029D64F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +374,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		32BBD4CB86FBC193DACA3A86 /* [CP] Embed Pods Frameworks */ = {
@@ -381,17 +414,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AC430A1EC1339800989EF5 /* LoginViewController.swift in Sources */,
 				CB0CC6691EAB0B1100EA3BC9 /* Transaction.swift in Sources */,
 				CBF9AA5D1EABDF84005B50C1 /* DateUtils.swift in Sources */,
 				CB0CC6581EAAFFAE00EA3BC9 /* Vendor_MenuInventoryVC.swift in Sources */,
+				E5AC43101EC140A800989EF5 /* User.swift in Sources */,
 				CB0CC6561EAACBC200EA3BC9 /* NetworkProtocols.swift in Sources */,
 				CB0CC6651EAB0AA000EA3BC9 /* Order.swift in Sources */,
 				CBB1C4341EAF010400D50636 /* TransactionCacher.swift in Sources */,
+				E5AC43191EC24B2C00989EF5 /* CompleteRegistrationViewController.swift in Sources */,
 				CB0CC65A1EAB00F200EA3BC9 /* Vendor_MenuItemUploadVC.swift in Sources */,
 				CBF9AA511EABD8EF005B50C1 /* TransactionVM.swift in Sources */,
+				E5AC43121EC144E100989EF5 /* NetworkService.swift in Sources */,
 				CB0CC6601EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift in Sources */,
 				CBF9AA471EABD5C9005B50C1 /* BalanceNetworker.swift in Sources */,
 				CB0CC6631EAB0A3400EA3BC9 /* Menu.swift in Sources */,
+				E5AC43151EC1637C00989EF5 /* extensions.swift in Sources */,
 				CB0CC6671EAB0AC900EA3BC9 /* Balance.swift in Sources */,
 				CBF9AA4F1EABD8CB005B50C1 /* BalanceVM.swift in Sources */,
 				CBF9AA491EABD600005B50C1 /* TransactionNetworker.swift in Sources */,
@@ -400,7 +438,9 @@
 				CBF9AA4D1EABD868005B50C1 /* OrderVM.swift in Sources */,
 				CBF9AA431EABD51E005B50C1 /* MenuNetworker.swift in Sources */,
 				CBF9AA5F1EABDFC1005B50C1 /* TimeUtils.swift in Sources */,
+				E5AC430E1EC133EC00989EF5 /* LoginNetworkService.swift in Sources */,
 				CBF9AA541EABDAC7005B50C1 /* Client_OrderItemCell.swift in Sources */,
+				E5AC430C1EC133B900989EF5 /* LoginViewModel.swift in Sources */,
 				CBF9AA451EABD550005B50C1 /* OrderNetworker.swift in Sources */,
 				CB0CC65E1EAB02CF00EA3BC9 /* Vendor_ViewOrdersByClientVC.swift in Sources */,
 				E52C60DF1EA9908D0029D64F /* AppDelegate.swift in Sources */,
