@@ -19,14 +19,14 @@ protocol LoginViewModelDelegate {
 
 class LoginViewModel: LoginNetworkDelegate {
     internal var delegate: LoginViewModelDelegate?
-    private var usernameTextValue: String
-    private var passwordTextValue: String
+    var usernameTextValue: String
+    var passwordTextValue: String
     private var isUsernameValid: Bool
     private var isPasswordValid: Bool
     
     private var networkSerivce = LoginNetworkService()
     
-    private var textFieldsValid: Bool {
+    var textFieldsValid: Bool {
         return isUsernameValid && isPasswordValid
     }
     
@@ -81,7 +81,6 @@ class LoginViewModel: LoginNetworkDelegate {
         switch caller {
         case "signInViaFirebase":
             networkSerivce.fetchUser()
-            
         case "fetchUser":
             tellDelegateToMoveToProfileView()
         default:

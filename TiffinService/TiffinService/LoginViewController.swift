@@ -34,7 +34,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewModel
     }
     
     @IBAction func handleSignIn(_ sender: UIButton) {
-        loginViewModel.signinButtonPressed()
+        guard let buttonTitle = sender.titleLabel?.text else {
+            print("LoginViewController :: How the fuck did I invoke?")
+            return
+        }
+        
+        switch buttonTitle {
+        case "Sign In":
+            loginViewModel.signinButtonPressed()
+        default:
+            print("LoginViewController :: Unrecognized button")
+        }
     }
     
     // MARK: - LoginViewModel Delegate Methods
@@ -71,15 +81,25 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewModel
         }
     }
     
-    
-    /*
      // MARK: - Navigation
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if !loginViewModel.textFieldsValid {
+            showAlertOnError(description: "Username and/or Password fields should not be empty")
+            return false
+        }
+        return true
+    }
+    
+    
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
+        let destVC = segue.destination as! CompleteRegistrationViewController
+        
+        destVC.username = loginViewModel.usernameTextValue
+        destVC.password = loginViewModel.passwordTextValue
      }
-     */
     
 }

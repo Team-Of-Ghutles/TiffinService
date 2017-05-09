@@ -46,6 +46,7 @@
 		E5AC43101EC140A800989EF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC430F1EC140A800989EF5 /* User.swift */; };
 		E5AC43121EC144E100989EF5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43111EC144E100989EF5 /* NetworkService.swift */; };
 		E5AC43151EC1637C00989EF5 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43141EC1637C00989EF5 /* extensions.swift */; };
+		E5AC43191EC24B2C00989EF5 /* CompleteRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		E5AC430F1EC140A800989EF5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E5AC43111EC144E100989EF5 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E5AC43141EC1637C00989EF5 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteRegistrationViewController.swift; sourceTree = "<group>"; };
 		EF41248F0F8383C752FB3BB0 /* Pods_TiffinService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiffinService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				CB0CC65D1EAB02CF00EA3BC9 /* Vendor_ViewOrdersByClientVC.swift */,
 				CB0CC65F1EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift */,
 				E5AC43091EC1339800989EF5 /* LoginViewController.swift */,
+				E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				CB0CC6561EAACBC200EA3BC9 /* NetworkProtocols.swift in Sources */,
 				CB0CC6651EAB0AA000EA3BC9 /* Order.swift in Sources */,
 				CBB1C4341EAF010400D50636 /* TransactionCacher.swift in Sources */,
+				E5AC43191EC24B2C00989EF5 /* CompleteRegistrationViewController.swift in Sources */,
 				CB0CC65A1EAB00F200EA3BC9 /* Vendor_MenuItemUploadVC.swift in Sources */,
 				CBF9AA511EABD8EF005B50C1 /* TransactionVM.swift in Sources */,
 				E5AC43121EC144E100989EF5 /* NetworkService.swift in Sources */,
