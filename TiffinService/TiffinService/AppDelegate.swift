@@ -29,7 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if (FIRAuth.auth()?.currentUser != nil) {
-            LaunchViewController.ClientViewMenuVC.setAsRootviewController(animated: true)
+            let usermodel: [String:String] = UserDefaults.standard.dictionary(forKey: "User") as! [String : String]
+            switch (usermodel["role"])! {
+                case "vendor":
+                    LaunchViewController.VendorBalance.setAsRootviewController(animated: true)
+                case "customer":
+                    LaunchViewController.ClientViewMenuVC.setAsRootviewController(animated: true)
+                default:
+                    fatalError()
+            }
         } else {
             LaunchViewController.Login.setAsRootviewController(animated: true)
         }
@@ -149,12 +157,13 @@ extension AppDelegate : FIRMessagingDelegate {
 extension AppDelegate {
     
     enum LaunchViewController {
-        case Login, ClientViewMenuVC
+        case Login, ClientViewMenuVC, VendorBalance
         
         var viewController: UIViewController {
             switch self {
             case .Login: return StoryboardScene.Login.initialViewController()
             case .ClientViewMenuVC: return StoryboardScene.Main.initialViewController()
+            case .VendorBalance: return StoryboardScene.Main.vendorBalanceViewController()
             }
         }
         
@@ -231,6 +240,10 @@ enum StoryboardScene {
         case ClientViewMenuVC = "ClientViewMenuVC"
         static func clientViewMenuVCViewController() -> Client_ViewMenuVC {
             return Main.ClientViewMenuVC.viewController() as! Client_ViewMenuVC
+        }
+        case VendorBalance = "VendorBalance"
+        static func vendorBalanceViewController() -> VendorBalanceViewController {
+            return Main.VendorBalance.viewController() as! VendorBalanceViewController
         }
     }
     enum Login: String, StoryboardSceneType {
