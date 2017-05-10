@@ -52,8 +52,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewModel
     func moveToProfileView() {
         // segue to profile view
         switch loginViewModel.getUserRole() {
-        case "vendor":
+        case "customer":
             AppDelegate.LaunchViewController.ClientViewMenuVC.setAsRootviewController(animated: true)
+        case "vendor":
+            AppDelegate.LaunchViewController.VendorBalance.setAsRootviewController(animated: true)
         default:
             showAlertOnError(description: "Error with User Role")
         }

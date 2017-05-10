@@ -47,6 +47,8 @@
 		E5AC43121EC144E100989EF5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43111EC144E100989EF5 /* NetworkService.swift */; };
 		E5AC43151EC1637C00989EF5 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43141EC1637C00989EF5 /* extensions.swift */; };
 		E5AC43191EC24B2C00989EF5 /* CompleteRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */; };
+		E5F9DFD31EC38FDA000C95DD /* VendorBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F9DFD21EC38FDA000C95DD /* VendorBalanceViewController.swift */; };
+		E5F9DFD51EC38FF3000C95DD /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F9DFD41EC38FF3000C95DD /* TransactionHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		E5AC43111EC144E100989EF5 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E5AC43141EC1637C00989EF5 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteRegistrationViewController.swift; sourceTree = "<group>"; };
+		E5F9DFD21EC38FDA000C95DD /* VendorBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorBalanceViewController.swift; sourceTree = "<group>"; };
+		E5F9DFD41EC38FF3000C95DD /* TransactionHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewController.swift; sourceTree = "<group>"; };
 		EF41248F0F8383C752FB3BB0 /* Pods_TiffinService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiffinService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +140,8 @@
 				CB0CC65F1EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift */,
 				E5AC43091EC1339800989EF5 /* LoginViewController.swift */,
 				E5AC43181EC24B2C00989EF5 /* CompleteRegistrationViewController.swift */,
+				E5F9DFD21EC38FDA000C95DD /* VendorBalanceViewController.swift */,
+				E5F9DFD41EC38FF3000C95DD /* TransactionHistoryViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -427,8 +433,10 @@
 				CBF9AA511EABD8EF005B50C1 /* TransactionVM.swift in Sources */,
 				E5AC43121EC144E100989EF5 /* NetworkService.swift in Sources */,
 				CB0CC6601EAB035F00EA3BC9 /* Vendor_ViewOrdersByItemVC.swift in Sources */,
+				E5F9DFD31EC38FDA000C95DD /* VendorBalanceViewController.swift in Sources */,
 				CBF9AA471EABD5C9005B50C1 /* BalanceNetworker.swift in Sources */,
 				CB0CC6631EAB0A3400EA3BC9 /* Menu.swift in Sources */,
+				E5F9DFD51EC38FF3000C95DD /* TransactionHistoryViewController.swift in Sources */,
 				E5AC43151EC1637C00989EF5 /* extensions.swift in Sources */,
 				CB0CC6671EAB0AC900EA3BC9 /* Balance.swift in Sources */,
 				CBF9AA4F1EABD8CB005B50C1 /* BalanceVM.swift in Sources */,
